@@ -8,5 +8,21 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
+  tebak
+  randNumber
+  bool : boolean = null
 
+  tebakangka(){
+    this.randNumber = Math.floor(Math.random() * 11);
+
+    if(this.tebak == this.randNumber){
+      this.bool = true
+      alert("Tebakan Benar")
+    }
+    else{
+      this.bool = false
+      alert("Tebakan salah")
+    }
+
+  }
 }
